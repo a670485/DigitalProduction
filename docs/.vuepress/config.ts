@@ -10,7 +10,7 @@ export default defineUserConfig({
   title: "Digital Production",
   description: "Guide d'integration des outils digitaux sur les lignes de Production",
 
-  base: "/DigitalProduction/",
+  base: "/",
 
   head: [
     [
