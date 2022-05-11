@@ -9,7 +9,9 @@ export default hopeTheme({
     name: "Dugauquier Julien",
     url: "http://pti03.cle.renault.fr:1810/search",
   },
-  repo:"a670485/DigitalProduction",
+  repo:"a670485/DigitalProduction/",
+  docsRepo:"a670485/DigitalProduction/",
+  docsBranch:'main',
   docsDir:'docs',
   iconPrefix: "fa fa-",
   logoDark: "/renault_white.png",
@@ -30,7 +32,7 @@ export default hopeTheme({
   copyright: false,
   footer:"Copyright © 2022 Dugauquier Julien",
   displayFooter: true,
-
+  lastUpdated:true,
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   blog: {
@@ -52,6 +54,7 @@ export default hopeTheme({
   },
   
   plugins: {
+    git: { createdTime:true , updatedTime:true, contributors:true },
     blog: {
       autoExcerpt: true,
     },

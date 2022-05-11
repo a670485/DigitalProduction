@@ -15,7 +15,7 @@ L'application **`Pilotage de ligne`** a été développée grâce au moteur V8 d
 La mise en oeuvre du système d'éligibilité et pilotage de ligne sur les lignes d'usinage nécessite :
 
 
-## Analyse
+## Analyse ✨
 
 L'expression du besoin client est important pour pouvoir :
 

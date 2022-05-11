@@ -1,13 +1,16 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme";
 import { addThisPlugin } from "vuepress-plugin-add-this";
+import { defaultTheme } from 'vuepress';
+import navbar from "./navbar";
+import sidebar from "./sidebar";
 
 export default defineUserConfig({
   lang: "en-US",
   title: "Digital Production",
   description: "Guide d'integration des outils digitaux sur les lignes de Production",
 
-  base: "/DigitalProduction/",
+  base: "/",
 
   head: [
     [
@@ -31,4 +34,13 @@ export default defineUserConfig({
  
   plugins: [addThisPlugin({ pubid: 'ra-626fd01740b5088f' })],
   theme,
+  /*: defaultTheme({
+    navbar: navbar,
+  navbarIcon: true,
+
+  // sidebar
+  //sidebar: sidebar,
+
+
+  }),*/
 });
