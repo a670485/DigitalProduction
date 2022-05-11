@@ -3,7 +3,7 @@ import navbar from "./navbar";
 import sidebar from "./sidebar";
 
 export default hopeTheme({
-  hostname: "http://pti03.cle.renault.fr",
+  hostname: "https://a670485.github.io/DigitalProduction/",
 
   author: {
     name: "Dugauquier Julien",
