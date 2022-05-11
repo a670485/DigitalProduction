@@ -1,0 +1,19 @@
+{
+  "name": "press3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/client": "^2.0.0-beta.43",
+    "docs": "0.3.2-canary.0",
+    "vue": "^3.2.33",
+    "vuepress": "^2.0.0-beta.43",
+    "vuepress-plugin-add-this": "2.0.0-beta.54",
+    "vuepress-theme-hope": "^2.0.0-beta.54"
+  },
+  "scripts": {
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache",
+    "docs:dev": "vuepress dev docs"
+  }
+}
