@@ -3,7 +3,7 @@ import navbar from "./navbar";
 import sidebar from "./sidebar";
 
 export default hopeTheme({
-  hostname: "https://a670485.github.io/siteTest/",
+  hostname: "https://a670485.github.io/siteTest",
 
   author: {
     name: "Dugauquier Julien",
