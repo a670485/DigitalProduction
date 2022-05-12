@@ -3,14 +3,14 @@ import navbar from "./navbar";
 import sidebar from "./sidebar";
 
 export default hopeTheme({
-  hostname: "https://a670485.github.io/",
+  hostname: "http://pti03.cle.renault.fr/",
 
   author: {
     name: "Dugauquier Julien",
     url: "http://pti03.cle.renault.fr:1810/search",
   },
-  repo:"a670485/a670485.github.io/",
-  docsRepo:"a670485/a670485.github.io/",
+  repo:"a670485/DigitalProduction/",
+  docsRepo:"a670485/DigitalProduction/",
   docsBranch:'main',
   docsDir:'docs',
   iconPrefix: "fa fa-",
