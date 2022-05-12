@@ -1,1 +1,1 @@
-﻿Ceci est la source d'une documentation développée en VuePRess
+﻿Ceci est la source d'une documentation développée en VuePress

@@ -1,5 +1,5 @@
 ﻿---
-index: 1
+index: 2
 lastUpdated: true
 pageview: true
 contributors: true
