@@ -2,6 +2,7 @@
 index: 3
 icon: computer
 title: Master Dizisoft
+date: 2022-05-09
 category:
   - Guide
 tag:

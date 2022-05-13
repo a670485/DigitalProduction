@@ -2,6 +2,7 @@
 index: false
 icon: book
 title: Guide
+date: 2022-05-02
 category:
   - Guide
 tag:
@@ -11,7 +12,8 @@ lastUpdated: true
 collapsable: true
 ---
 
-Ce guide a pour but de vous expliquer les différentes étapes afin d'instrumenter une ligne de production de **A** à **Z**. Bien-sûr, je n'affirme pas que celle-ci est la seule méthode mais je peux vous dire que cette solution a éaté mise en oeuvre sur plusieurs ligne de production sur le site de **Renault Cléon**.
+Ce guide a pour but de vous expliquer les différentes étapes de l'instrumentation d'une ligne de production de **A** à **Z**. Bien-sûr, je n'affirme pas que celle-ci est la seule méthode mais je peux vous dire que cette solution a été mise en oeuvre sur plusieurs ligne de production sur le site de **Renault Cléon**. Elle est fonctionnelle depuis 2020 et c'est environ 50 personnes qui l'utilisent au quotidien.
+
 
 Vous pourrez utiliser l'ensemble des fonctionnalités 
 - **Tracabilité pièces**
@@ -41,10 +43,7 @@ subgraph M1 [<strong>Opération 1]
 direction BT
 p0M1((pièce)) --> mac1(Usinage) -->proc1([collectage données])-->colM1[(Serveur Tooling)] 
 end
-subgraph M2 [<strong>Opération 2]
-direction BT
-p0M2((pièce)) --> mac2(Usinage) -->proc2([collectage données])-->colM2[(Serveur Tooling)] 
-end
+
 subgraph C1 [<strong>Convoyeur]
   direction TB
   c1 -->q1
@@ -53,14 +52,7 @@ subgraph C1 [<strong>Convoyeur]
  c1 -->|Non| S1[Evacuation P.M]
  
 end
-subgraph C2 [<strong>Convoyeur]
-  direction TB
-  c2 -->q2
- q2[(Serveur Tooling)] -->c2{{Pièce éligible???}}
 
- c2 -->|Non| S2[Evacuation P.M]
- 
-end
 subgraph MF [<strong> Marquage Final ]
 direction BT
  CF  -->proc3([collectage données])-->colCF[(Serveur Tooling)] 
@@ -75,7 +67,7 @@ end
 
 subgraph Ligne[<h1>Ligne de production</h1>]
   direction LR
-  G -->C1 -->M1 --> C2-->M2 --> MF
+  G -->C1 -->M1 -...->|N operations |MF
 end
 
 
@@ -104,27 +96,22 @@ class MF greenLight
 
 ## Bien Démarrer ...
 
-Pour bien [démarrer](/guide/demarrage), il faudra bien [analyser](/guide/demarrage#analyse) le besoin client pour activer les fonctionnalités souhaitées; Mais aussi bien comprendre, vous devez savoir parfaitement où vous allez en terme de [chiffrage](/guide/demarrage#chiffrage). 
-Afin d'être le plus performant, il faudra bien comprendre l'[organisation](/guide/demarrage#Processus-de-Mise-en-Oeuvre) entre les métiers.
+Pour bien [démarrer](/guide/demarrage), il faudra bien [analyser](/guide/demarrage#analyse) le besoin client pour activer les fonctionnalités souhaitées; Vous devrez savoir parfaitement où vous allez en terme de [chiffrage](/guide/demarrage#chiffrage). 
+Et enfin pour gagner en efficacité, il faudra bien comprendre l'[organisation](/guide/demarrage#Processus-de-Mise-en-Oeuvre) entre les métiers.
 
-## Configuration
+## :wrench: [Configuration](/guide/configuration) 
 
-Toutes fonctions passe par une bonne configuration
+Ce chapitre vous permettra de configurer correctement les outils informatiques
 
-- préparation de l'environnement [serveur](/guide/environnement)
-- Configuration des [I.O.T Dizi](/guide/master)
+## :keyboard:[Programmation](/guide/programmmation)
 
-## Programmation
+Nous continuerons ce guide en parlant des différents programmes nécéssaire à l'application. 
 
-## Formation
 
-## Evolution
+## :label: [Pour aller plus loin...](/guide/end)
 
-[01]: /analyse.jpg
-[02]: /guide/dizisoft
-[03]: /guide/nodeRed
-[04]: /chiffrage.png
+Je concluerai en vous donnant les outils nécessaires pour améliorer les applications en expliquant les évolutions possibles et la manière pour y arriver. Bien-sûr, je vous laisse approfondir chaque partie en vous listant les liens utiles..
 
-[^ftt]:**F**ull **T**rack and **T**race est un projet long terme du Groupe Renault afin de collecter massivement toutes les données machines, les stocker  dans des Entrepôts `DataLake` dont la gestion a été attitré à la société Google <i class="fa-brands fa-google"></i> . La réutilisation des données se fait par requêtes payantes auprès des serveurs Google afin de remonter des synthèses sous forme graphique
+Je vous souhaite une très bonne lecture et j'espère que ce guide vous aidera dans la compréhension de la **digitalisation d'une ligne de production**
 
-[^agile]: La méthodologie Agile est un processus qui permet à l'équipe de gérer un projet en le décomposant en plusieurs étapes. Elle implique une collaboration constante entre les parties prenantes, une amélioration et une itération continues à chaque étape.
+

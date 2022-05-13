@@ -1,10 +1,9 @@
 ﻿---
-index: 2
-lastUpdated: true
-pageview: true
-contributors: true
+index: 1
+
 icon: server
-title: Configuration serveur
+title: Serveur
+date: 2022-04-25
 category:
   - Guide
 tag:

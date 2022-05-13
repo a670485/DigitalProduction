@@ -35,20 +35,20 @@ Pour la solution mise en place sur les lignes Emotor / EPT, le besoin était le 
   - Gagner en réactivité et en fiabilité (`Tableaux de Bord`)
 :::
 
-La construction des modes de fonctionnement liés à ce besoin devra être consolidé avec les métiers de l'ingénierie, fabrication et Maintenance.
+La construction des modes de fonctionnement liés à ce besoin devra être consolidée avec les métiers de l'ingénierie, fabrication et Maintenance.
 
 Il sera nécessaire de bien identifier les risques ayant un impact direct sur la mise en oeuvre de la solution. 
 >***Pour la petite histoire***, d'autres projets informatique se sont mis en place en même temps que notre solution (cybersécurité, F.T.T[^ftt], Sauvegarde automatique) qui ont nécessité une mise à jour de l'architecture des réseaux, l'achat de matériel supplémentaire et standardisation de données communes à F.T.T[^ftt], intégration de logiciel dans le `Master`du collecteur [Dizisoft][02]
 
 
 
-## Chiffrage
+## Chiffrage :dollar:
 
 :::info Capitalisation E-motor RotorShaft
 Le chapitre suivant s'appuie sur les données acquises lors du premier projet **Digital**. Les prix ont été négociés en 2020 et peuvent bien-sûr évoluer...
 :::
 ![chiffrage projet][04]
-### <i class="fa-solid fa-user-shield"></i> Compétences & Charges  
+###  :muscle: Compétences & Charges  
 Dans l'idéal, il y a deux profils essentiels à la bonne réussite du projet : 
 
 ::: warning Pré-Requis
@@ -118,7 +118,7 @@ Un serveur a été déployée et disponible auprès du **Tooling Informatique**.
 Ce qui fait un total de **170 heures** en moyenne par machine à lisser sur le nombre de personnes pendant la durée du projet. 
 
 
-### Coût de la Solution
+### :receipt: Coût de la Solution
 
 
 Les coûts matériels sont  :
@@ -148,25 +148,28 @@ Les coûts matériels sont  :
 ```
 :::
 
-:::tip Astuce
+:::tip Astuce 
 
 Pensez bien à votre configuration Automate. Il est nécessaire d'avoir une carte réseau disponible sur votre configuration pour se connecter au Réseau N2.
 :::
 
 
-## Processus de Mise en Oeuvre
+## Processus de Mise en Oeuvre 	:spiral_calendar:
 
 Allez on rentre dans le coeur du métier ==***l'intégration***== et c'est pas le  plus simple...	:anguished:  
 
-**Pourquoi???** \
+### :question:**Pourquoi???** 
 Tout simplement parcequ'on peut perdre énormément de temps lors de l'intégration.
 
-**Comment Faire???** \
+### :hammer_and_wrench: **Comment Faire???** 
 Il important d'avoir une bonne organisation couplée à une communication implaquable. Chaque membre de l'équipe sait ce qu'il doit faire et sait ce qu'il attend de l'autre. L'idéal est que personne attend après l'autre.  	:stuck_out_tongue_winking_eye:
 
 On peut pratiquer la méthode **A**gile[^agile] afin d'avancer dans le bon sens tout en restant motiver  :clap: :muscle:
+Vous devrez prévoir une réunion bi-mensuel (que l'on passera en hebdomadaire si besoin) afin de présentez l'avancement du sujet principal et vérifier que chaque métier ne soient bloqués. Je vous recommende d'utiliser les outils collaboratif de l'entreprise. Créez un [TEAMS](https://teams.microsoft.com/), Stockez y les documents utiles au projet afin qu'ils soient modifiés par les membres de l'équipe projet.
 
 
+
+### :pencil: Schéma
 ```flow
 st=>start: Début
 ao1=>operation: Architecture Automatisme
@@ -203,12 +206,13 @@ ip3(path3,right)->io7->io8->e
 ao5(bottom)->io6->e
 ```
 
-```mermaid
-flowchart LR
-    A-->B
-```
 
 
+[01]: /analyse.jpg
+[02]: /guide/dizisoft
+[03]: /guide/nodeRed
+[04]: /chiffrage.png
 
+[^ftt]:**F**ull **T**rack and **T**race est un projet long terme du Groupe Renault afin de collecter massivement toutes les données machines, les stocker  dans des Entrepôts `DataLake` dont la gestion a été attitré à la société Google <i class="fa-brands fa-google"></i> . La réutilisation des données se fait par requêtes payantes auprès des serveurs Google afin de remonter des synthèses sous forme graphique
 
-
+[^agile]: La méthodologie Agile est un processus qui permet à l'équipe de gérer un projet en le décomposant en plusieurs étapes. Elle implique une collaboration constante entre les parties prenantes, une amélioration et une itération continues à chaque étape.
