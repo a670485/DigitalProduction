@@ -49,7 +49,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/guide/encrypt.html": ["1234"],
+      "/guide/Configuration/master": ["1234"],
     },
   },
   

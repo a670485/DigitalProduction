@@ -6,12 +6,11 @@ import navbar from "./navbar";
 import sidebar from "./sidebar";
 
 export default defineUserConfig({
-  lang: "en-US",
+  lang: "fr-FR",
   title: "Digital Production",
   description: "Guide d'integration des outils digitaux sur les lignes de Production",
 
   base: "/",
-
   head: [
     [
       "script",

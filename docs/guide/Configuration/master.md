@@ -26,9 +26,10 @@ Ne jamais ré-installer la carte d'origine insérée dans le PC Dizisoft sans au
 :::
 
 
-Le gros avantage des Pc [**Beckhoff**](https://www.beckhoff.com) utilisé par le fournisseur [**Dizisoft**](https://www.dizisoftweb.com/) est qu'il utilise une carte mémoire de type ***CFast Card*** comme disque dur de chargement système.
+Le gros avantage des Pc [**Beckhoff**](https://www.beckhoff.com) utilisé par le fournisseur [**Dizisoft**](https://www.dizisoftweb.com/) est qu'il utilise une carte mémoire de type ***CFast Card*** comme disque dur de chargement système. Un simple changement de carte pour réinstaller un système complet 	:star_struck:
 
-Une fois la ***CFast Card*** préparée, insérez-la dans le PC Dizi et démarrez le PC en l'alimentant en 24v. Un port DVi est disponible pour y brancher un écran et des ports USB permettent la connexion d'un clavier. Vous devriez tombé sur le bureau ci-dessous. 
+Une fois la ***CFast Card*** préparée, insérez-la dans le PC Dizi et démarrez le PC en l'alimentant en 24v. Un port DVi est disponible pour y brancher un écran. Quatre ports USB permettent la connexion d'un clavier.
+Après quelques instants, vous devriez tomber sur le bureau ci-dessous. 
 >***Note*** : *La version peut être différent suite aux dernières évolutions apportées au master*.
 
 ![ecran accueil](/pcDiziAccueil.png) 
@@ -43,7 +44,7 @@ Pour gagner du temps, munissez-vous du fichier d'**`architecture réseau`** de l
 :::warning Règle
 La règle de **nomination** des I.O.T Dizisoft est la suivante :
 
-`<nomProjet><numeroDeLigne>-<numeroOP5Digit>-<numeroDeMachine>`
+`< **nomProjet** >< **numeroDeLigne** >`**<span style="font-size: 1.8rem;display: inline-block;transform: translate(-1px, 4px);}">-</span>**`<* *numeroOP5Digit** >`**<span style="font-size: 1.8rem;display: inline-block;transform: translate(-1px, 4px);}">-</span>**`< **numeroDeMachine** >`
 >Exemple : ETECH2-00010-1
 :::
 
@@ -164,4 +165,75 @@ Une fois que vous avez terminé la configuration du collecteur, allez dans les s
 
 ## Configuration Bit de Vie (option)
 
-Dans le 
+Cette option permettra d'envoyer un bit de vie à la machine. Grâce à celui-ci, la machine est capable de savoir si l'**I.O.T Dizisoft** est en train de collecter les données machine. On peut donc facilement programmer par la suite un **arret fin de cycle** sur la machine si on perd le bit de vie. Cette option est utile si vous souhaitez être sûr à 100% de collecter les données pièce et machine.
+### Activation Service NodeRed I.O.T
+
+Tout d'abord, vous allez ouvrir `services.msc` afin d'activer le service
+
+![nodeRedCollecte](/nodeRedCollecte.png)
+Changez le type de démarrage en `Automatique` et faites `Démarrer` . Voilà le service se lance et vous pouvez ouvrir une fenêtre `Chrome` pour afficher le programme qui gère le **Bit de Vie** [http://localhost:1880](http://localhost:1880)
+
+Le mot de passe **Admin** : `Cleon76!` 
+### Algorithme "Bit de Vie"
+:::danger A FAIRE
+Dessinez un flowchart de l'algorithme
+:::
+
+```mermaid
+flowchart LR 
+
+subgraph s1 [Acquittement]
+  direction TB
+  acq{Acquit <br> Défaut <br> A.P.I ?}
+  acq-- Oui -->raz(RAZ Défaut)-->fin1
+  acq-- Non --> fin1([FIN])
+  
+end
+
+subgraph s2 [Bit de vie]
+  direction TB
+  trig1([Trigger 1s])-->def{défaut ?}
+  def-- non -->inv(Inversion Bit)-->Ecr(Ecriture A.P.I)-->fin2([FIN])
+  def-- oui --> fin2
+  
+end
+
+subgraph s3[Test]
+direction TB
+  trig2([Trigger 10ms])-->top1(TOP_FU_API) & top2(TOP-FU-DIZI)-->eg{== ?}
+  eg-- non -->set(Set Défaut)-->fin3([FIN])
+  eg-- oui --> fin3
+
+end
+
+s1-.-s2-.-s3
+
+```
+
+
+### A.P.I ***`fanuc`***
+  ![prog Fanuc](/nodeRedFanuc.png)
+  Le programme permet de lire et écrire dans la C.N Fanuc. 
+  Vous devrez configurer les adresses A.P.I:
+  - **Acquittement Défaut** (bit `0` dans un Byte)
+  - **TOP_FU_CN** (bit `3` dans le même byte)
+  - **Bit de Vie** (un autre Byte)
+  Ensuite vous devrez configurer l'adresse OPCUA Dizi:
+  - **TOP_FU_DIZI** (prendre un client OPCUA pour retrouver l'adresse du NodeID de cette variable)
+  :::note 
+  Ecrire un chapitre sur comment récupérer une variable OPCUA dans le blog 
+  :::
+
+### A.P.I ***`Siemens`***
+
+Le programme permet de lire et écrire dans un automate Siemens compatible OPCUA (**famille CPU1500**). 
+  Vous devrez configurer les `nodeId OPCUA` dans l' A.P.I:
+  - **Acquittement Défaut** 
+  - **TOP_FU_API** 
+  - **Bit de Vie** 
+  Ensuite vous devrez configurer l'adresse OPCUA Dizi:
+  - **TOP_FU_DIZI** (prendre un client OPCUA pour retrouver l'adresse du NodeID de cette variable)
+  :::note
+  Ecrire un article sur la configuration OPCUA d'un automate 1500
+  :::
+

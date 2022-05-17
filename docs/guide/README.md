@@ -11,6 +11,12 @@ tag:
 lastUpdated: true
 collapsable: true
 ---
+:::info Note
+Certaines sections de ce guide sont protégées par **mot de passe** car elles contiennent des données sensibles. Vous pouvez contacter [Mr Dugauquier Julien](mailto:julien.dugauquier@renault.com) afin qu'il vous transmette le mot de passe. Je vous remercie par avance de ne pas le divulguer à des gens externes. En plus, il est  prévu le mot de passe sera régulièrement modifié; ce qui veut dire qu'il faudra refaire votre demande.
+
+Merci de votre compréhension
+
+:::
 
 Ce guide a pour but de vous expliquer les différentes étapes de l'instrumentation d'une ligne de production de **A** à **Z**. Bien-sûr, je n'affirme pas que celle-ci est la seule méthode mais je peux vous dire que cette solution a été mise en oeuvre sur plusieurs ligne de production sur le site de **Renault Cléon**. Elle est fonctionnelle depuis 2020 et c'est environ 50 personnes qui l'utilisent au quotidien.
 
