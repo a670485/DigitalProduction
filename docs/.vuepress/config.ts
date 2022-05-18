@@ -6,7 +6,7 @@ import navbar from "./navbar";
 import sidebar from "./sidebar";
 
 export default defineUserConfig({
-  lang: "fr-FR",
+  lang: "en-US",
   title: "Digital Production",
   description: "Guide d'integration des outils digitaux sur les lignes de Production",
 

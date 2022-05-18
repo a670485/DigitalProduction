@@ -42,11 +42,30 @@ Chocolatey est une solution de gestion logicielle qui ne ressemble à rien d'aut
 Vérifiez que la variable [Get-ExecutionPolicy](https://go.microsoft.com/fwlink/?LinkID=135170) est pas `Restricted`. 
 Si oui, Exécuter `Set-ExecutionPolicy AllSigned` ou `Set-ExecutionPolicy Bypass -Scope Process` 
 
-3. Lancez l'installation de chocolatey 
+3. Télecharger le fichier [`install.ps1`](https://community.chocolatey.org/install.ps1) et copiez le dans `c:\`
 
+4. Allez dans C:  
 ```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+cd c:\
 ```
+5. Configurez le serveur de proxy
+```powershell
+$env:chocolateyProxyLocation = '<ip_Serveur_proxy>:<port_serveur_proxy>'
+# exemple Proxy Tooling Cleon == http://138.21.70.154:3128
+```
+6. Configurez le user et mot de passe du proxy
+```powershell
+$env:chocolateyProxyUser = 'username'
+$env:chocolateyProxyPassword = 'password'
+```
+7. Executez le script pour installer **Chocolatey**
+```powershell
+./install.ps1
+```
+
+
+
+
 :::danger Attention!!!
 
 Sur votre serveur, il faut avoir accès à internet. Pour cela vérifiez bien votre configuration surtout au niveau du proxy. 
@@ -116,7 +135,7 @@ Bon!!! L'environnement [Node][01] est opérationnel mais il reste à configurer 
 
 ```sh
 npm config set proxy http://<utilisateur>:<motDePasse>@<adresseProxy>:<portProxy>
-npm config set https-proxy https://<utilisateur>:<motDePasse>@<adresseProxy>:<portProxy>
+npm config set https-proxy http://<utilisateur>:<motDePasse>@<adresseProxy>:<portProxy>
 ```
 
 :::tip Exemple

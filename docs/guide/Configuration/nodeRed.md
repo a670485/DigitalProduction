@@ -2,6 +2,7 @@
 index: 2
 icon: node fa-brands
 title: NodeRed
+date: 2022-05-05
 category:
   - Guide
 tag:
@@ -60,6 +61,7 @@ Une fois installé, la plus simple façon d'exécuter [nodeRed](01) est de taper
 C:>node-red
 ```
 Le serveur [nodeRed][01] se lance dans le terminal et on peut lire les différentes étapes du lancement. 
+
 ![consoleNodeRed][03]
 
 Une fois démarré, toutes les notifications, évenements, erreurs seront affichés dans le terminal.
@@ -136,12 +138,19 @@ Vous devrez renseigner dans l'onglet `Application` :
   - **repertoire de démarrage** qui est le chemin du dossier projet où installer tous les fichiers et modules supplémentaires pour nodeRed
   - **Paramètres** fichier [settings.js](/guide/configuration/nodeRed#fichier-de-configuration) que nous avons créer et configurer.
 
+Puis dans l'onglet `Connexion`, renseignez le compte administrateur qui a servi à l'installation du serveur. Cela permettra d'avoir accès aux installations de paquets dans [NodeRed][01]
+
+Si vous souhaitez avoir le log des infos ou des erreurs fourni par votre programme [NodeRed][01], pensez à renseigner un nom de fichier dans l'onglet E/S
+
+![onglet E/S NSSM][07]
+
 [01]: https://nodered.org/
 [02]: https://flows.nodered.org/node/node-red-contrib-opcua
 [03]: /consoleNodeRed.png
 [04]: /settings.js
 [05]: #Node-red-admin
 [06]: http://pti03.cle.renault.fr:1810/search
+[07]: /logNSSM.png
 
 [^IOT]: L'Internet of Things (IoT) décrit le réseau de terminaux physiques, les « objets », qui intègrent des capteurs, des softwares et d'autres technologies en vue de se connecter à d'autres terminaux et systèmes sur Internet et d'échanger des données avec eux
 
