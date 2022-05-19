@@ -23,7 +23,7 @@ Chocolatey est une solution de gestion de logiciels qui vous permet de gérer 10
 
 Chocolatey est une solution de gestion logicielle qui ne ressemble à rien d'autre que vous ayez jamais expérimenté sous Windows. Il met l'accent sur la simplicité, la sécurité et l'évolutivité infinie. 
 
-### Conditions 
+### 	:page_with_curl:Conditions 
 
 
 - Windows 7+/Windows 2003+ (Server Core également, mais pas Windows Nano Server)
@@ -31,7 +31,7 @@ Chocolatey est une solution de gestion logicielle qui ne ressemble à rien d'aut
 - .NET Framework 4.x+
 
 
-### Installation
+### :dvd:Installation
 
 1. Lancez **PowerShell** en mode Administrateur
 
@@ -93,7 +93,7 @@ En cas de problème, regardez la [documentation](https://docs.chocolatey.org/en-
 ## <i style="color:green;" class="fa-brands fa-node-js" ></i> [Node.JS][01]
 
 
-### A quoi çà sert
+### :bulb: A quoi çà sert
 
 **[NodeJs][01]** est un environnement serveur basé sur le langage [javascript](https://fr.wikipedia.org/wiki/JavaScript). Il a été créé en 2009 par Ryan Dahl. Il souhaitait améliorer la barre de progression de chargement de fichiers sur le site Flickr. En quelques années, Node est devenu une référence pour les développeurs JavaScript et la communauté n’a cessé de s’étendre. Node est open source et il évolue plusieurs fois par an.
 
@@ -106,13 +106,13 @@ Node est conseillé quand vous avez besoin de traitements lourds sur des donnée
 Pour développer l'application [pilotage de ligne](http://pti03.cle.renault.fr:1810/search), nous avons besoin de récupérer les données collectées sur les machines pour les restituer dans une application **`Single-Page`**. NodeJs répond à ce besoin
 :::
 
-### Node.js et NPM
+### :label: Node.js et NPM
 
 NPM est le gestionnaire de paquets de Node.js et de tout environnement Javascript, et comprend plus d’un million de paquets disponibles gratuitement. Ce n’est pas le seul gestionnaire de paquets existants, mais il est certainement le plus populaire grâce à sa communauté grandissante de développeurs actifs.
 
 NPM intègre un outil en ligne de commande qui permet entre autres, d’installer et de désinstaller des paquets, de gérer les versions des modules et les dépendances à votre projet. C’est à partir de NPM que vous pouvez installer par exemple le framework web ExpressJS, la librairie Axios pour les requêtes HTTP, un préprocesseur CSS Less ou SASS, l’outil de modélisation d’objets MongoDB Mongoose et bien d’autres.
 
-### Installation
+### :dvd: Installation
 
 :::info Pré-requis
 Si vous n'avez pas encore installer le gestionnaire chocolatey, c'est par [ici][02]

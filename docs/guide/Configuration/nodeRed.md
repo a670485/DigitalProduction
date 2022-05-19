@@ -9,7 +9,7 @@ tag:
   - nodeRed
   - Installation
 article: false
-collapsable: true
+
 ---
 
 ::: warning  Pré-Requis
@@ -112,6 +112,13 @@ mkdir <projetName>
     - **userDir**  : \<nom du dossier où stocker les fhichiers programmes>  ('/home/nol/.node-red). Vous remarquerez les `/` dans le chemin au lieu des traditionelles `\` dans Windows. Ici renseignez le chemin du dossier crée à l'étape 1.
     - **httpAdminRoot** : Activez cette option en enlevant les `//` 
     - **adminAuth** : Activez cette option en enlevant les `//`. Pour configurer le compte Administrateur, renseignez laclé de hashage généré grâce à l'outil [`node-red-admin`][05] au niveau de la clé `password`
+4. Configurez une expiration de session par sécurité 
+```js
+  adminAuth: {
+    sessionExpiryTime: 28800
+  ...
+  }
+```
   
 ### :mailbox_with_mail: NodeRed  mode Service
 
@@ -138,7 +145,9 @@ Vous devrez renseigner dans l'onglet `Application` :
   - **repertoire de démarrage** qui est le chemin du dossier projet où installer tous les fichiers et modules supplémentaires pour nodeRed
   - **Paramètres** fichier [settings.js](/guide/configuration/nodeRed#fichier-de-configuration) que nous avons créer et configurer.
 
-Puis dans l'onglet `Connexion`, renseignez le compte administrateur qui a servi à l'installation du serveur. Cela permettra d'avoir accès aux installations de paquets dans [NodeRed][01]
+:::tip Ne pas oublier
+Dans l'onglet `Connexion`, renseignez le **compte administrateur** qui a servi à l'installation du serveur. Cela permettra d'avoir accès aux installations de paquets dans [NodeRed][01]
+:::
 
 Si vous souhaitez avoir le log des infos ou des erreurs fourni par votre programme [NodeRed][01], pensez à renseigner un nom de fichier dans l'onglet E/S
 

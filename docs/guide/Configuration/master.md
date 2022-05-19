@@ -12,7 +12,7 @@ tag:
   - license
   - collecteur
 article: false
-collapsable: true
+
 ---
 
 ::: warning  Pré-Requis
