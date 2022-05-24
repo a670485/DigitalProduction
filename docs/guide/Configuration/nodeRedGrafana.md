@@ -1,7 +1,7 @@
 ﻿---
-index: 4
+index: 5
 icon: chart-column
-title: Tableau de bord
+title: Tableaux de bord
 date: 2022-05-18
 category:
   - Guide
@@ -198,7 +198,7 @@ Vous pouvez faire aussi des **imports/exports** de tableau de bord directement d
 
 ## En conclusion
 Vous voilà avec un serveur prêt à recevoir vos programmes et tableaux graphiques.
-Dans le chapitre ***Programmation***, nous verrons comment sauvegarder une donnée dans la base de données puis la restituer sous forme d'un graphique en temps réel.
+Dans le chapitre ***[Programmation](/guide/Programmation)***, nous verrons comment sauvegarder une donnée dans la base de données puis la restituer sous forme d'un graphique en temps réel.
 
 
 

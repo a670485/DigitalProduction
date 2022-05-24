@@ -76,7 +76,7 @@ En cas de problème, regardez la [documentation](https://docs.chocolatey.org/en-
 
 5. Ouvrez un terminal `cmd` et tapez la commande `choco` ou `choco -?` dès maintenant
  
-::: tip Quelques commandes utile
+::: tip Quelques commandes utiles
 
 - **Lister** tous les paquets installés avec Chocolatey :
 `choco list -l`

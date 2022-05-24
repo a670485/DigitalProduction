@@ -131,8 +131,7 @@ LIGNE 58:	base = (pti_etec ou  pti_etec2 ou pti_ept ou .....)
 - Configurez le mapping de la machine concernée `Configuration/Gestion Mapping(MAPGES)`
 
     - Importez le fichier standard [mapping](/mapping.csv)
-
-    -    Ajoutez / Supprimez des variables si besoin
+    - Ajoutez / Supprimez des variables si besoin
 
 -  Configurez l'adresse des collecteurs OPCUA  en renseignant
     - Nom du PC

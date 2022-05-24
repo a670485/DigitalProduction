@@ -109,7 +109,7 @@ Et enfin pour gagner en efficacité, il faudra bien comprendre l'[organisation](
 
 Ce chapitre vous permettra de configurer correctement les outils informatiques
 
-## :keyboard:[Programmation](/guide/programmmation)
+## :keyboard:[Programmation](/guide/Programmation)
 
 Nous continuerons ce guide en parlant des différents programmes nécéssaire à l'application. 
 
