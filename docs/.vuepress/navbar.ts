@@ -11,6 +11,7 @@ export default navbar([
     prefix: "/posts/",
     children: [
      "Industrie_Digital.md",
+     "OPCUA.md",
       {
         text: "Articles 1-4",
         icon: "edit",

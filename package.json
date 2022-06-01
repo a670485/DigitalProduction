@@ -7,16 +7,14 @@
     "@vuepress/client": "^2.0.0-beta.45",
     "docs": "0.3.2-canary.0",
     "vue": "^3.2.36",
-    "vuepress": "^2.0.0-beta.45",
-    "vuepress-plugin-add-this": "2.0.0-beta.54",
-    "vuepress-theme-hope": "^2.0.0-beta.71"
+    "vuepress": "2.0.0-beta.45",
+    "vuepress-plugin-components": "2.0.0-beta.75",
+    "vuepress-theme-hope": "2.0.0-beta.70"
   },
   "scripts": {
     "docs:build": "vuepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache --debug",
     "docs:dev": "vuepress dev docs --debug"
-  },
-  "dependencies": {
-    "vuepress-shared": "2.0.0-beta.69"
   }
+  
 }

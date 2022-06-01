@@ -1,6 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme";
-import { addThisPlugin } from "vuepress-plugin-add-this";
+import {componentsPlugin} from "vuepress-plugin-components";
+//import { addThisPlugin } from "vuepress-plugin-add-this";
 import { defaultTheme } from 'vuepress';
 import navbar from "./navbar";
 import sidebar from "./sidebar";
@@ -31,7 +32,15 @@ export default defineUserConfig({
     ]
   ],
  
-  //plugins: [addThisPlugin({ pubid: 'ra-626fd01740b5088f' })],
+  plugins: [
+   
+    componentsPlugin({
+      components:[
+        "Badge","PDF"
+      ],
+      addThis:'ra-626fd01740b5088f',
+    })
+    ],
   theme,
   /*: defaultTheme({
     navbar: navbar,

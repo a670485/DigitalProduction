@@ -24,7 +24,7 @@ features:
   - title: NodeRed
     icon: node fa-brands
     details: Programmation "Low Code" pour les applications événementielles. Boite à outils...
-    link: /guide/NodeRed/
+    link: /guide/Programmation/progNodeRed
 
   - title: MySql
     icon: database
@@ -34,12 +34,12 @@ features:
   - title: Dizisoft
     icon: chart-gantt
     details: Analyse données machines en temps réél
-    link: /guide/Dizisoft
+    link: /guide/Programmation/dizisoft
 
   - title: OPCUA
     icon: osi fa-brands
     details: Protocole standard de communication dans le domaine de l'industrie
-    link: /articles/Opcua
+    link: /posts/article/Opcua
 
   - title: VueJs Intégration
     icon: vuejs fa-brands
@@ -49,7 +49,7 @@ features:
   - title: Uibuilder
     icon: blog
     details: Echanger vos données entre NodeRed et l'interface Utilisateur
-    link: /guide/uibuilder
+    link: /guide/Programmation/progWeb
 
   - title: Grafana
     icon: palette
@@ -57,7 +57,7 @@ features:
     link: https://grafana.com/
 ---
 
-Vous souhaitez intégrer la solution sur une de vos lignes? N'hésitez à me [contacter](/intro).
+Vous souhaitez intégrer la solution sur une de vos lignes? N'hésitez à me [contacter](/intro.md).
 
 Vous pouvez aussi essayer l'[application](http://pti03.cle.renault.fr:1810/search)
 
@@ -65,7 +65,7 @@ Intéréssé?   :smiley: :+1: alors la [documentation technique](/guide) vous ai
 
 :::tip Bon à savoir
 
-Rapprochez vous du Tooling Informatique Cléon pour savoir si la capacité Serveur est toujours optimum. Cela vous fera gagner en terme d'investissement si il n'y a pas de serveur à acheter :money_mouth_face:.
+Rapprochez vous du Tooling Informatique Cléon pour savoir si la Serveur de pilotage est toujours capacitaire. Cela sera toujours çà de gagné en terme d'investissement. :money_mouth_face:.
 
 ::::
 
