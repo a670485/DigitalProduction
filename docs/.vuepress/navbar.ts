@@ -10,6 +10,7 @@ export default navbar([
     icon: "edit",
     prefix: "/posts/",
     children: [
+     "Industrie_Digital.md",
       {
         text: "Articles 1-4",
         icon: "edit",

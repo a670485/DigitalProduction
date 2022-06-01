@@ -1,5 +1,6 @@
 ---
 icon: gear
+title: Digital Industrie
 date: 2022-04-28
 category:
   - Transformation

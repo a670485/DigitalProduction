@@ -45,7 +45,7 @@ Les flux peuvent ensuite être déployés dans l'environnement d'exécution en u
 Une bibliothèque intégrée vous permet d'enregistrer des fonctions, des modèles ou des flux utiles pour les réutiliser.
 
 
-## Installation :floppy_disk:
+## :floppy_disk: Installation 
 
 Pour l'installation de NodeRed, nous allons utiliser le gestionnaire de paquets de NodeJs `npm`  :
 
@@ -54,7 +54,7 @@ Pour l'installation de NodeRed, nous allons utiliser le gestionnaire de paquets 
 npm install -g --unsafe-perm node-red
 ```
 
-## Lancement de [nodeRed][01]  :rocket:
+## :rocket: Lancement de [nodeRed][01]  
 
 Une fois installé, la plus simple façon d'exécuter [nodeRed](01) est de taper dans un terminal `cmd` : 
 ```ps
@@ -73,7 +73,7 @@ Vous pouvez créer votre premier `Flow`.... en vous connectant sur la page de d�
 Si vous fermez le terminal, l'application [nodeRed](01) s'arrête également
 :::
 
-## Configuration :wrench:
+## :wrench: Configuration 
 
 Par défaut, [nodeRed](01) s'éxécute en local et en mode `utilisateur`. Vous l'aurez compris pour l'utiliser en tant que `Backend`[^Backend], on doit configurer un minimum l'application pour :
   - Exécuter en mode service au démarrage du serveur

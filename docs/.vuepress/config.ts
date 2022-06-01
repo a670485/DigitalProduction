@@ -6,7 +6,7 @@ import navbar from "./navbar";
 import sidebar from "./sidebar";
 
 export default defineUserConfig({
-  lang: "en-US",
+  lang: "fr-FR",
   title: "Digital Production",
   description: "Guide d'integration des outils digitaux sur les lignes de Production",
 
@@ -31,7 +31,7 @@ export default defineUserConfig({
     ]
   ],
  
-  plugins: [addThisPlugin({ pubid: 'ra-626fd01740b5088f' })],
+  //plugins: [addThisPlugin({ pubid: 'ra-626fd01740b5088f' })],
   theme,
   /*: defaultTheme({
     navbar: navbar,

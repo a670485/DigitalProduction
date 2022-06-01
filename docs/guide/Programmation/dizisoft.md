@@ -16,7 +16,7 @@ article: false
 Le logiciel ***Diziscop*** est un outil qui permet de faire l'acquisition de données machines en temps réel afin de les afficher sous forme de graphique dont l'abscisse est le temps qui s'écoule et en ordonnée la valeur des données acquises. ***Diziscop*** est multi-protocole (Siemens, Fanuc, Robot, Twincat, OPCUA, ....). Et enfin, il permet d'exposer les données acquises sous forme d'un serveur OPCUA. C'est cette fonctionnalité que nous allons exploiter pour stocker les données sur notre base de donnée <img   width="50"  src="/mySql.svg" alt="NodeRed">
 
 
-## Creation projet
+## :new: Nouveau projet
 
 
 :::warning Règle
@@ -31,11 +31,12 @@ La règle de **nomination** du nom de projet est la suivante :
 Pour connaitre l'ensemble des variables nécéssaire à l'application, je vous joins une copie de la version pour le projet EPT 100KW [Prédisposition Tracabilité][02]
 :::
 
-### 1. Appuyer sur `Nouveau Projet`
+- Appuyez sur `Nouveau Projet`
 
 ![projet dizi](/diziNew.png)
 
-### 2. Création d'un `équipement interne`
+## :heavy_plus_sign:  Equipements
+### Interne
 ![équipement interne](/diziVarInterne.png) 
 
 Cet équipement interne permet de créer des variables ou plutôt des constantes internes à l'application qui ne changeront pas. Exemple : le numéro de machine dans la ligne `ZD_NUMMACHINE`
@@ -43,11 +44,11 @@ En faisant `Clic Droit` sur l'équipement puis `Gérer les variables`, vous pour
 En faisant `Editer les valeurs`, vous pourrez affecter une valeur à chaque constante.
 ![edit valeur](/diziEditionValeur.png)
 
-### 3. Création d'un `équipement machine`
+### Machine
 
 En fonction du système de commande de la machine, vous choisirez le bon protocole. Faites un `Clic Droit` sur l'équipement et appuyez sur `Gérer les variables`, vous pourrez renseigner toutes les variables automates nécessaires à l'application. 
 
-### 4. Création des groupes
+## :toolbox: Création des groupes
 
 
 Nous aurons besoin de créer **quatre groupes** de données: 
@@ -56,7 +57,7 @@ Nous aurons besoin de créer **quatre groupes** de données:
 - Fréquentiel
 - Outils
 
-#### 4.1 TOP 
+### TOP 
 
 Ce groupe contiendra une seule variable. C'est elle qui servira de déclencheur pour le collecteur développé par le ***Tooling Informatique Cléon***. Au top, le collecteur récupérera les données contenues dans le groupe **PDL**.
 - Nom du groupe : **PDL-TOP**
@@ -65,13 +66,13 @@ Ce groupe contiendra une seule variable. C'est elle qui servira de déclencheur 
 La variable sera une variable composée avec la variable **ZD_TOP_FU** et le **ZD_CYCLE_INTERRUPTED**. Cela permettra de récupérer les données en fin de cycle ou si un incident s'est produit sur la machine pendant le cycle
 :::
 
-#### 4.2 PDL
+### PDL
 
 Ce groupe contiendra l'ensemble des variables qui est nécessaire à l'application de Tracabilité. Toutes les variables définies dans le [mapping Mapgès][01] de l'opération doivent impérativement être présente. 
 - Nom du groupe : **PDL-**\<*Numero de l\'opération*\>-\<*Numero de machine*\>
 - Variables : Voir Liste [tracabilité][02]
 
-#### 4.3 FREQUENTIEL (option)
+### FREQUENTIEL (option)
 
 Ce groupe sera ajouté si nous collectons les données sur une machine d'usinage qui contient un ou plusieurs compteurs fréquentiel.
 
@@ -79,7 +80,7 @@ Elle contiendra une variable `REST_F1` qui donnera le nombre de pièces restante
 
 
 
-#### 4.4 TOOLS (option)
+### TOOLS (option)
 
 Ce groupe sera ajouté si nous collectons les données sur une machine d'usinage qui contient un ou plusieurs compteurs outils.
 
@@ -97,9 +98,11 @@ Ces 2 variables servent à récupérer le nombre de pièces restante avant un ch
 --- 
 :::info Info
 
-Bien-sûr, vous pouvez rajouter d'autres groupe au projet si vous souhaitez collecter d'autres données (ex: Dépannage d'un bug machine intempestif)
+Bien-sûr, vous pouvez rajouter d'autres groupes au projet si vous souhaitez collecter des données supplémentaires (ex: Dépannage d'un bug machine intempestif)
 
 :::
+
+
 
 
 
