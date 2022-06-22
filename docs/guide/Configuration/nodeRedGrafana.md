@@ -1,5 +1,6 @@
 ﻿---
-index: 5
+index: true
+order: 5
 icon: chart-column
 title: Tableaux de bord
 date: 2022-05-18
@@ -21,7 +22,7 @@ Avant de continuer vous devrez installer un service NodeRed dédié à votre app
 
 ## <img   width="30"  src="/influxdb.svg" alt="NodeRed"> InfluxDB  
 ### :bulb: InfluxDB, qu'est-ce que c'est ?
-[InfluxDB][01] est un système de gestion de base de données orientée séries temporelles hautes performances, écrit avec le langage de programmation Go et distribué sous licence MIT. InfluxDB se veut très rapide en écriture.
+[InfluxDB][01] est un système de gestion de base de données orienté **séries temporelles hautes performances**, écrit avec le langage de programmation Go et distribué sous licence MIT. InfluxDB se veut très rapide en écriture.
 
 Encore une fois, la base de données devra être installée en ***Mode service*** pour être active 24H/24H.
 ### :dvd: Installation

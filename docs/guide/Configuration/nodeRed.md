@@ -1,5 +1,6 @@
 ﻿---
-index: 2
+index: true
+order: 2
 icon: node fa-brands
 title: NodeRed
 date: 2022-05-05
@@ -29,7 +30,7 @@ Pour pouvoir installer NodeRed, Veuillez suivre la configuration de votre enviro
 
  Node-RED est un éditeur de flux fonctionnant dans un navigateur Web qui permet la connexion de flux à l'aide d'une large gamme d'outils `node` contenue dans la palette d'outils.
 
-Les flux peuvent ensuite être déployés dans l'environnement d'exécution en un seul clic.Les fonctions JavaScript peuvent être créées dans l'éditeur à l'aide d'un éditeur de texte enrichi.
+Les flux peuvent ensuite être déployés dans l'environnement d'exécution en un seul clic. Les fonctions JavaScript peuvent être créées dans l'éditeur à l'aide d'un éditeur de texte enrichi.
 
  Grâce à `npm`il est possible de rajouter des `node` à la palette
 
@@ -122,7 +123,7 @@ mkdir <projetName>
   
 ### :mailbox_with_mail: NodeRed  mode Service
 
-L'application **[Pilotage de ligne]*)= doit être accessible aux utilisateurs 24H/24H. Il est donc nécéssaire d'installer `NodeRed ` en mode **Service WEB**
+L'application **[Pilotage de ligne]** doit être accessible aux utilisateurs 24H/24H. Il est donc nécéssaire d'installer `NodeRed ` en mode **Service WEB**
 
 
 ####  Installation de NSSM

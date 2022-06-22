@@ -1,5 +1,5 @@
 ﻿---
-index: 1
+order: 1
 icon: chart-gantt
 title: DiziScop
 date: 2022-05-24
@@ -57,11 +57,12 @@ Nous aurons besoin de créer **quatre groupes** de données:
 - Fréquentiel
 - Outils
 
-### TOP 
+### PDL-TOP 
 
 Ce groupe contiendra une seule variable. C'est elle qui servira de déclencheur pour le collecteur développé par le ***Tooling Informatique Cléon***. Au top, le collecteur récupérera les données contenues dans le groupe **PDL**.
-- Nom du groupe : **PDL-TOP**
-- Nom de la variable: **TOP**\<Numero Operation *5digits*\>-\<Numero-de-Machine\>
+
+>- Nom du groupe : **PDL-TOP**
+>- Nom de la variable: **TOP**\<Numero Operation *5digits*\>-\<Numero-de-Machine\>
 :::info Info
 La variable sera une variable composée avec la variable **ZD_TOP_FU** et le **ZD_CYCLE_INTERRUPTED**. Cela permettra de récupérer les données en fin de cycle ou si un incident s'est produit sur la machine pendant le cycle
 :::
@@ -69,8 +70,8 @@ La variable sera une variable composée avec la variable **ZD_TOP_FU** et le **Z
 ### PDL
 
 Ce groupe contiendra l'ensemble des variables qui est nécessaire à l'application de Tracabilité. Toutes les variables définies dans le [mapping Mapgès][01] de l'opération doivent impérativement être présente. 
-- Nom du groupe : **PDL-**\<*Numero de l\'opération*\>-\<*Numero de machine*\>
-- Variables : Voir Liste [tracabilité][02]
+>- Nom du groupe : **PDL-**\<*Numero de l\'opération*\>-\<*Numero de machine*\>
+>- Variables : Voir Liste [tracabilité][02]
 
 ### FREQUENTIEL (option)
 
@@ -85,12 +86,12 @@ Elle contiendra une variable `REST_F1` qui donnera le nombre de pièces restante
 Ce groupe sera ajouté si nous collectons les données sur une machine d'usinage qui contient un ou plusieurs compteurs outils.
 
 Liste des variables :
-- Outils 1
-    - T01_REST
-    - T01_VAL
-- Outils n
-    - Tn_REST
-    - Tn_VAL
+>- Outils 1
+>    - T01_REST
+>    - T01_VAL
+>- Outils n
+>    - Tn_REST
+>    - Tn_VAL
 
 Ces 2 variables servent à récupérer le nombre de pièces restante avant un changement d'outils pour la première et le nombre de pièces produites avec l'outil pour la seconde variable.
 

@@ -162,10 +162,10 @@ Allez on rentre dans le coeur du métier ==***l'intégration***== et c'est pas l
 Tout simplement parcequ'on peut perdre énormément de temps lors de l'intégration.
 
 ### :hammer_and_wrench: **Comment Faire???** 
-Il important d'avoir une bonne organisation couplée à une communication implaquable. Chaque membre de l'équipe sait ce qu'il doit faire et sait ce qu'il attend de l'autre. L'idéal est que personne attend après l'autre.  	:stuck_out_tongue_winking_eye:
+Il est important d'avoir une bonne organisation couplée à une communication sans faille. Chaque membre de l'équipe sait ce qu'il doit faire et sait ce qu'il attend de l'autre. Une chose essentielle à se rappeler:  ###Personne ne doit attendre après une autre personne###.  	:stuck_out_tongue_winking_eye:
 
 On peut pratiquer la méthode **A**gile[^agile] afin d'avancer dans le bon sens tout en restant motiver  :clap: :muscle:
-Vous devrez prévoir une réunion bi-mensuel (que l'on passera en hebdomadaire si besoin) afin de présentez l'avancement du sujet principal et vérifier que chaque métier ne soient bloqués. Je vous recommende d'utiliser les outils collaboratif de l'entreprise. Créez un [TEAMS](https://teams.microsoft.com/), Stockez y les documents utiles au projet afin qu'ils soient modifiés par les membres de l'équipe projet.
+Vous devrez prévoir une réunion bi-mensuel (que l'on passera en hebdomadaire si besoin) afin de présenter l'avancement du sujet principal et vérifier que chaque métier ne soit bloqué. Je vous recommende d'utiliser les outils collaboratif de l'entreprise. Créez un [TEAMS](https://teams.microsoft.com/), Stockez y les documents utiles au projet afin qu'ils soient modifiés par les membres de l'équipe projet.
 
 
 
@@ -213,6 +213,6 @@ ao5(bottom)->io6->e
 [03]: /guide/nodeRed
 [04]: /chiffrage.png
 
-[^ftt]:**F**ull **T**rack and **T**race est un projet long terme du Groupe Renault afin de collecter massivement toutes les données machines, les stocker  dans des Entrepôts `DataLake` dont la gestion a été attitré à la société Google <i class="fa-brands fa-google"></i> . La réutilisation des données se fait par requêtes payantes auprès des serveurs Google afin de remonter des synthèses sous forme graphique
+[^ftt]:**F**ull **T**rack and **T**race est un projet long terme du Groupe Renault afin de collecter massivement toutes les données machines, les stocker  dans des Entrepôts `DataLake` dont la gestion a été attitré à la société Google <i class="fa-brands fa-google " style=" color: blue"></i> . La réutilisation des données se fait par requêtes payantes auprès des serveurs Google afin de remonter des synthèses sous forme graphique
 
 [^agile]: La méthodologie Agile est un processus qui permet à l'équipe de gérer un projet en le décomposant en plusieurs étapes. Elle implique une collaboration constante entre les parties prenantes, une amélioration et une itération continues à chaque étape.

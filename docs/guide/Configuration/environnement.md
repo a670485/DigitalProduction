@@ -1,5 +1,6 @@
 ﻿---
-index: 1
+index: true
+order: 1
 
 icon: server
 title: Serveur
@@ -19,7 +20,9 @@ article: false
 
 [chocolatey]( https://chocolatey.org/) est un gestionnaire de paquet qui permet d'installer des programmes automatiquement sur **Windows**
 
-Chocolatey est une solution de gestion de logiciels qui vous permet de gérer 100 % de vos logiciels, partout où vous avez Windows, avec n'importe quel outil de gestion des terminaux. Aucune autre solution (y compris les solutions récemment annoncées) n'atteint ce niveau de gestion - la plupart ne peuvent gérer que les logiciels dans Programmes et fonctionnalités.
+
+
+Chocolatey est une **solution** de gestion de logiciels qui vous permet de gérer 100 % de vos logiciels, partout où vous avez Windows, avec n'importe quel outil de gestion des terminaux. Aucune autre solution (y compris les solutions récemment annoncées) n'atteint ce niveau de gestion - la plupart ne peuvent gérer que les logiciels dans Programmes et fonctionnalités.
 
 Chocolatey est une solution de gestion logicielle qui ne ressemble à rien d'autre que vous ayez jamais expérimenté sous Windows. Il met l'accent sur la simplicité, la sécurité et l'évolutivité infinie. 
 

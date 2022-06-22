@@ -4,17 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@vuepress/client": "^2.0.0-beta.45",
-    "docs": "0.3.2-canary.0",
-    "vue": "^3.2.36",
-    "vuepress": "2.0.0-beta.45",
-    "vuepress-plugin-components": "2.0.0-beta.75",
-    "vuepress-theme-hope": "2.0.0-beta.70"
+    "@vuepress/client": "2.0.0-beta.46",
+    "vue": "3.2.37",
+    "vuepress": "2.0.0-beta.46",
+    "vuepress-plugin-components": "2.0.0-beta.78",
+    "vuepress-theme-hope": "2.0.0-beta.78"
   },
   "scripts": {
     "docs:build": "vuepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache --debug",
     "docs:dev": "vuepress dev docs --debug"
   }
-  
 }

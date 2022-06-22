@@ -102,19 +102,19 @@ class MF greenLight
 
 ## Bien Démarrer ...
 
-Pour bien [démarrer](/guide/demarrage), il faudra bien [analyser](/guide/demarrage#analyse) le besoin client pour activer les fonctionnalités souhaitées; Vous devrez savoir parfaitement où vous allez en terme de [chiffrage](/guide/demarrage#chiffrage). 
-Et enfin pour gagner en efficacité, il faudra bien comprendre l'[organisation](/guide/demarrage#Processus-de-Mise-en-Oeuvre) entre les métiers.
+Pour bien [démarrer](/guide/demarrage.md), il faudra bien [analyser](/guide/demarrage.md#analyse) le besoin client pour activer les fonctionnalités souhaitées; Vous devrez savoir parfaitement où vous allez en terme de [chiffrage](/guide/demarrage.md#chiffrage). 
+Et enfin pour gagner en efficacité, il faudra bien comprendre l'[organisation](/guide/demarrage.md#Processus-de-Mise-en-Oeuvre) entre les métiers.
 
-## :wrench: [Configuration](/guide/configuration) 
+## :wrench: [Configuration](/guide/configuration.md) 
 
 Ce chapitre vous permettra de configurer correctement les outils informatiques
 
-## :keyboard:[Programmation](/guide/Programmation)
+## :keyboard:[Programmation](/guide/Programmation.md)
 
 Nous continuerons ce guide en parlant des différents programmes nécéssaire à l'application. 
 
 
-## :label: [Pour aller plus loin...](/guide/end)
+## :label: [Pour aller plus loin...](/guide/end.md)
 
 Je concluerai en vous donnant les outils nécessaires pour améliorer les applications en expliquant les évolutions possibles et la manière pour y arriver. Bien-sûr, je vous laisse approfondir chaque partie en vous listant les liens utiles..
 

@@ -1,5 +1,6 @@
 ﻿---
-index: 3
+index: true
+order: 3
 icon: computer
 title: Master Dizisoft
 date: 2022-05-09

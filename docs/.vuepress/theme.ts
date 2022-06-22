@@ -3,8 +3,18 @@ import navbar from "./navbar";
 import sidebar from "./sidebar";
 
 export default hopeTheme({
+ 
+  //backToTop:true,
   hostname: "http://pti03.cle.renault.fr/",
-
+  themeColor: {
+    blue: "#2196f3",
+    red: "#f26d6d",
+    //green: "#3eaf7c",
+    orange: "#fb9b5f",
+    violet:"#ce24f9"
+  },
+  darkmode:"switch",
+  fullscreen: true,
   author: {
     name: "Dugauquier Julien",
     url: "http://pti03.cle.renault.fr:1810/search",
@@ -13,7 +23,8 @@ export default hopeTheme({
   docsRepo:"a670485/DigitalProduction/",
   docsBranch:'main',
   docsDir:'docs',
-  iconPrefix: "fa fa-",
+  //iconPrefix: "fa fa-",
+  iconAssets:'font-awesome',
   logoDark: "/renault_white.png",
   logo: "/renault_black.png",
   breadcrumb:true,
@@ -34,7 +45,7 @@ export default hopeTheme({
   displayFooter: true,
   lastUpdated:true,
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
-
+ 
   blog: {
     description: "Développeur Digital",
     intro: "/intro.html",
@@ -55,7 +66,7 @@ export default hopeTheme({
   
   plugins: {
     git: { createdTime:true , updatedTime:true, contributors:true },
-    blog: {
+    blog:  {
       autoExcerpt: true,
     },
     
@@ -69,7 +80,7 @@ export default hopeTheme({
       /**
        * Using giscus
        */
-      type: "giscus",
+      provider: "Giscus",
       repo: "a670485/DigitalProduction",
       repoId: "R_kgDOHQDEig",
       category: "Announcements",
